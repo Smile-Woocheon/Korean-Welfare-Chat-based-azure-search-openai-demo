@@ -135,8 +135,9 @@ const Chat = () => {
                     {!lastQuestionRef.current ? (
                         <div className={styles.chatEmptyState}>
                             <SparkleFilled fontSize={"120px"} primaryFill={"rgba(115, 118, 225, 1)"} aria-hidden="true" aria-label="Chat logo" />
-                            <h1 className={styles.chatEmptyStateTitle}>Chat with your data</h1>
-                            <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
+                            <h1 className={styles.chatEmptyStateTitle}>사회복지 데이터 기반으로 대화하세요</h1>
+                            <h2 className={styles.chatEmptyStateSubtitle}>사전에 학습한 매뉴얼, 사례집 등을 기반으로 대답합니다.</h2>
+                            <h3 className={styles.chatEmptyStateSubtitle}>문의 : 신용우</h3>
                             <ExampleList onExampleClicked={onExampleClicked} />
                         </div>
                     ) : (
@@ -179,12 +180,7 @@ const Chat = () => {
                     )}
 
                     <div className={styles.chatInput}>
-                        <QuestionInput
-                            clearOnSend
-                            placeholder="Type a new question (e.g. does my plan cover annual eye exams?)"
-                            disabled={isLoading}
-                            onSend={question => makeApiRequest(question)}
-                        />
+                        <QuestionInput clearOnSend placeholder="새로운 질문을 입력하세요." disabled={isLoading} onSend={question => makeApiRequest(question)} />
                     </div>
                 </div>
 

@@ -133,10 +133,10 @@ const OneShot = () => {
         <div className={styles.oneshotContainer}>
             <div className={styles.oneshotTopSection}>
                 <SettingsButton className={styles.settingsButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
-                <h1 className={styles.oneshotTitle}>Ask your data</h1>
+                <h2 className={styles.oneshotTitle}>사전에 학습한 데이터를 기반으로 응답합니다.</h2>
                 <div className={styles.oneshotQuestionInput}>
                     <QuestionInput
-                        placeholder="Example: Does my plan cover annual eye exams?"
+                        placeholder="여기에 질문을 입력하세요."
                         disabled={isLoading}
                         onSend={question => makeApiRequest(question)}
                     />
