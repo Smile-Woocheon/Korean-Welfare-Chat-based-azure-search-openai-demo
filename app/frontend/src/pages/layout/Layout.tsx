@@ -25,7 +25,7 @@ const Layout = () => {
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
-                                <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
+                                <a href="https://github.com/Smile-Woocheon/Korean-Welfare-Chat-based-azure-search-openai-demo" target={"_blank"} title="Github repository link">
                                     <img
                                         src={github}
                                         alt="Github logo"
@@ -38,7 +38,7 @@ const Layout = () => {
                             </li>
                         </ul>
                     </nav>
-                    <h4 className={styles.headerRightText}>Azure OpenAI + Cognitive Search</h4>
+                    <h6 className={styles.headerRightText}>Azure OpenAI + Cognitive Search</h6>
                 </div>
             </header>
 
