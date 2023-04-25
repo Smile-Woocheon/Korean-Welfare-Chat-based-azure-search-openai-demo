@@ -19,7 +19,7 @@ const Layout = () => {
                                     Chat
                                 </NavLink>
                             </li>
-                            {/*}    
+                            {/* 질문하기 페이지 주석처리함
                             <li className={styles.headerNavLeftMargin}>
                                 <NavLink to="/qa" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
                                     Ask a question
