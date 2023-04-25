@@ -135,15 +135,11 @@ const OneShot = () => {
                 <SettingsButton className={styles.settingsButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
                 <h2 className={styles.oneshotTitle}>사전에 학습한 데이터를 기반으로 응답합니다.</h2>
                 <div className={styles.oneshotQuestionInput}>
-                    <QuestionInput
-                        placeholder="여기에 질문을 입력하세요."
-                        disabled={isLoading}
-                        onSend={question => makeApiRequest(question)}
-                    />
+                    <QuestionInput placeholder="여기에 질문을 입력하세요." disabled={isLoading} onSend={question => makeApiRequest(question)} />
                 </div>
             </div>
             <div className={styles.oneshotBottomSection}>
-                {isLoading && <Spinner label="Generating answer" />}
+                {isLoading && <Spinner label="답변 생성중" />}
                 {!lastQuestionRef.current && <ExampleList onExampleClicked={onExampleClicked} />}
                 {!isLoading && answer && !error && (
                     <div className={styles.oneshotAnswerContainer}>
@@ -173,11 +169,11 @@ const OneShot = () => {
             </div>
 
             <Panel
-                headerText="Configure answer generation"
+                headerText="답변 생성 설정"
                 isOpen={isConfigPanelOpen}
                 isBlocking={false}
                 onDismiss={() => setIsConfigPanelOpen(false)}
-                closeButtonAriaLabel="Close"
+                closeButtonAriaLabel="닫기"
                 onRenderFooterContent={() => <DefaultButton onClick={() => setIsConfigPanelOpen(false)}>Close</DefaultButton>}
                 isFooterAtBottom={true}
             >
@@ -193,7 +189,7 @@ const OneShot = () => {
                     <TextField
                         className={styles.oneshotSettingsSeparator}
                         defaultValue={promptTemplate}
-                        label="Override prompt template"
+                        label="프롬프트 사전 설정 바꾸기"
                         multiline
                         autoAdjustHeight
                         onChange={onPromptTemplateChange}
@@ -223,23 +219,23 @@ const OneShot = () => {
 
                 <SpinButton
                     className={styles.oneshotSettingsSeparator}
-                    label="Retrieve this many documents from search:"
+                    label="동시에 검색할 문서의 수(페이지):"
                     min={1}
                     max={50}
                     defaultValue={retrieveCount.toString()}
                     onChange={onRetrieveCountChange}
                 />
-                <TextField className={styles.oneshotSettingsSeparator} label="Exclude category" onChange={onExcludeCategoryChanged} />
+                <TextField className={styles.oneshotSettingsSeparator} label="제외할 카테고리" onChange={onExcludeCategoryChanged} />
                 <Checkbox
                     className={styles.oneshotSettingsSeparator}
                     checked={useSemanticRanker}
-                    label="Use semantic ranker for retrieval"
+                    label="검색을 위해 semantic ranker 사용"
                     onChange={onUseSemanticRankerChange}
                 />
                 <Checkbox
                     className={styles.oneshotSettingsSeparator}
                     checked={useSemanticCaptions}
-                    label="Use query-contextual summaries instead of whole documents"
+                    label="전체 문서 대신 요약자료에서 검색"
                     onChange={onUseSemanticCaptionsChange}
                     disabled={!useSemanticRanker}
                 />

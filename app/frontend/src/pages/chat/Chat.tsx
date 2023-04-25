@@ -201,18 +201,18 @@ const Chat = () => {
                 )}
 
                 <Panel
-                    headerText="Configure answer generation"
+                    headerText="답변 생성 설정"
                     isOpen={isConfigPanelOpen}
                     isBlocking={false}
                     onDismiss={() => setIsConfigPanelOpen(false)}
-                    closeButtonAriaLabel="Close"
+                    closeButtonAriaLabel="닫기"
                     onRenderFooterContent={() => <DefaultButton onClick={() => setIsConfigPanelOpen(false)}>Close</DefaultButton>}
                     isFooterAtBottom={true}
                 >
                     <TextField
                         className={styles.chatSettingsSeparator}
                         defaultValue={promptTemplate}
-                        label="Override prompt template"
+                        label="프롬프트 사전 설정 바꾸기"
                         multiline
                         autoAdjustHeight
                         onChange={onPromptTemplateChange}
@@ -220,30 +220,30 @@ const Chat = () => {
 
                     <SpinButton
                         className={styles.chatSettingsSeparator}
-                        label="Retrieve this many documents from search:"
+                        label="동시에 검색할 문서의 수(페이지):"
                         min={1}
                         max={50}
                         defaultValue={retrieveCount.toString()}
                         onChange={onRetrieveCountChange}
                     />
-                    <TextField className={styles.chatSettingsSeparator} label="Exclude category" onChange={onExcludeCategoryChanged} />
+                    <TextField className={styles.chatSettingsSeparator} label="제외할 카테고리" onChange={onExcludeCategoryChanged} />
                     <Checkbox
                         className={styles.chatSettingsSeparator}
                         checked={useSemanticRanker}
-                        label="Use semantic ranker for retrieval"
+                        label="검색을 위해 semantic ranker 사용"
                         onChange={onUseSemanticRankerChange}
                     />
                     <Checkbox
                         className={styles.chatSettingsSeparator}
                         checked={useSemanticCaptions}
-                        label="Use query-contextual summaries instead of whole documents"
+                        label="전체 문서 대신 요약자료에서 검색"
                         onChange={onUseSemanticCaptionsChange}
                         disabled={!useSemanticRanker}
                     />
                     <Checkbox
                         className={styles.chatSettingsSeparator}
                         checked={useSuggestFollowupQuestions}
-                        label="Suggest follow-up questions"
+                        label="후속 질문 받기"
                         onChange={onUseSuggestFollowupQuestionsChange}
                     />
                 </Panel>
