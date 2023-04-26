@@ -1,7 +1,25 @@
 여기는 사회복지 데이터 중심으로 활용하기 위해 한글화를 진행하고 있는 곳입니다.
--------------------------------------------
-아래는 원래 Repository의 readme 원문입니다.
 
+#### 로컬에서 VSC 기준
+
+1. 내 로컬로 자료를 복사하세요.
+  Run 'gh repo clone Smile-Woocheon/Korean-Welfare-Chat-based-azure-search-openai-demo'
+2. 애저에 로그인하세요.
+  Run 'azd auth login'
+3. 애저에 자동으로 작업환경을 만드세요.
+  Run 'azd up'
+4. data 폴더에 여러분의 PDF를 넣으세요. 단, 파일이름이 한글로 시작하면 안되고 암호가 걸려 있어도 안됩니다.
+5. 추후에 PDF 업로드 하고 싶으면 기존 PDF 지우고 새것만 넣은후, 아래 명령어를 실행하세요.
+  Run './scripts/prepdocs.ps1'    (파워쉘 기준)
+6. 만약 코드를 수정했다면 아래의 명령어를 실행해서 업데이트 하세요.
+  Run 'azd deploy'
+  
+-------------------------------------------
+
+
+#아래는 원래 Repository의 readme 원문입니다. 사전 준비나 상세 설명은 아래 원문을 참조하세요.
+
+-------------------------------------------
 # ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
 
 [![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=599293758&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
