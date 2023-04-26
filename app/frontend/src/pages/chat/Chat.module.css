@@ -33,6 +33,7 @@
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 .chatEmptyStateSubtitle {

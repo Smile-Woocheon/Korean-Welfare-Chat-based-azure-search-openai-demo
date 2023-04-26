@@ -25,7 +25,6 @@ const Layout = () => {
                                     Ask a question
                                 </NavLink>
                             </li>
-                            */}
                             <li className={styles.headerNavLeftMargin}>
                                 <a
                                     href="https://github.com/Smile-Woocheon/Korean-Welfare-Chat-based-azure-search-openai-demo"
@@ -42,9 +41,10 @@ const Layout = () => {
                                     />
                                 </a>
                             </li>
+                            */}
                         </ul>
                     </nav>
-                    <h6 className={styles.headerRightText}>Azure OpenAI + Cognitive Search</h6>
+                    <h6 className={styles.headerRightText}><a href="https://sites.google.com/woocheon.or.kr/ai-chat/intro" target="_blank">about</a></h6>
                 </div>
             </header>
 
