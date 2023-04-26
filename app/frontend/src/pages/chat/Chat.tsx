@@ -137,9 +137,10 @@ const Chat = () => {
                             <SparkleFilled fontSize={"120px"} primaryFill={"rgba(115, 118, 225, 1)"} aria-hidden="true" aria-label="Chat logo" />
                             <h1 className={styles.chatEmptyStateTitle}>사회복지 데이터 Chat</h1>
                             <h2 className={styles.chatEmptyStateSubtitle}>사전에 학습한 매뉴얼, 사례집 등을 기반으로 대답합니다.</h2>
+                            <h3 className={styles.chatEmptyStateSubtitle}>본 사이트는 alpha 버전으로 불안정합니다. 예산 소진시 예고 없이 멈출 수 있습니다.</h3>
                             <h3 className={styles.chatEmptyStateSubtitle}>
                                 <a href="https://sites.google.com/woocheon.or.kr/ai-chat/intro" target="_blank">
-                                    상세 안내 및 참여하기 클릭
+                                    상세 안내 클릭
                                 </a>
                             </h3>
 
