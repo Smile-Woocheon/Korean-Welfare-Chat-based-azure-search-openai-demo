@@ -1,3 +1,7 @@
+여기는 사회복지 데이터 중심으로 활용하기 위해 한글화를 진행하고 있는 곳입니다.
+-------------------------------------------
+아래는 원래 Repository의 readme 원문입니다.
+
 # ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
 
 [![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=599293758&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
