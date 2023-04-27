@@ -139,7 +139,7 @@ const Chat = () => {
                             <h2 className={styles.chatEmptyStateSubtitle}>사전에 학습한 매뉴얼, 사례집 등을 기반으로 대답합니다.</h2>
                             <h3 className={styles.chatEmptyStateSubtitle}>본 사이트는 alpha 버전으로 불안정합니다. 예산 소진시 예고 없이 멈출 수 있습니다.</h3>
                             <h3 className={styles.chatEmptyStateSubtitle}>
-                                <a href="https://sites.google.com/woocheon.or.kr/ai-chat/intro" target="_blank">
+                                <a href="https://www.welfareai.net/chat" target="_blank">
                                     상세 안내 클릭
                                 </a>
                             </h3>
