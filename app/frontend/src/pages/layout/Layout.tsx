@@ -44,7 +44,11 @@ const Layout = () => {
                             */}
                         </ul>
                     </nav>
-                    <h6 className={styles.headerRightText}><a href="https://sites.google.com/woocheon.or.kr/ai-chat/intro" target="_blank">about</a></h6>
+                    <h3 className={styles.headerRightText}>
+                        <a href="https://www.welfareai.net/chat" target={"_blank"} title="about">
+                            <img src="/qicon.png" aria-label="Link to about" width="25px" height="25px" />
+                        </a>
+                    </h3>
                 </div>
             </header>
 
