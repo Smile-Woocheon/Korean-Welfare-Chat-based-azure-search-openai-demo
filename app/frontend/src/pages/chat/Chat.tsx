@@ -208,9 +208,6 @@ const Chat = () => {
                 본 사이트는 alpha 버전으로 불안정하며, 대답이 정확하지 않을 수
                 있습니다.
               </h3>
-              <h4 className={styles.chatEmptyStateSubtitle}>
-                API Ver.2023-06-01 MAX TOKEN.240K
-              </h4>
               <h3 className={styles.chatEmptyStateSubtitle}>
                 <a href="https://www.welfareai.net/chat" target="_blank">
                   상세 안내 클릭
